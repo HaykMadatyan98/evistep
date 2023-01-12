@@ -1,0 +1,310 @@
+body {
+    background-color: #1E1E1E;
+    margin: 16px auto;
+    font-family: Source Sans Pro;
+}
+body > div {
+    margin: 0 10%;
+}
+
+button {
+    cursor: pointer;
+    font-weight: bolder;
+}
+button:hover {
+    opacity: .5;
+    border-color:inherit;
+}
+
+img {
+    width: 33px;
+    height: 36px;
+}
+
+.firstPart, .secondPart {
+    display: flex;
+    justify-content: space-between;
+}
+.firstPart > button {
+    border-radius: 131px;
+    width: 175px;
+    height: 42px;
+    background-color: inherit;
+    color: white;
+    border:1px solid #8276FF;
+}
+.secondPart {
+    margin-top: 150px;
+}
+.secondPartText {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 700px;
+}
+
+.logoPart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.helperImages {
+    position: relative;
+    width: 680px;
+}
+.helperImages > img:first-child {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+}
+.helperImages > img:last-child {
+    position: absolute;
+    left: 25%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    width: 120%;
+    height: 100%;
+}
+
+.yellowText {
+    color: #FFC759;
+}
+
+.secondPartText > span:nth-child(1) {
+    font-size: 42px;
+    line-height: 69px;
+    letter-spacing: 0.007em;
+}
+.secondPartText > span:nth-child(2) {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 24px;
+    width: 240px;
+    letter-spacing: 0.007em;
+    margin-top: 20px;
+}
+.secondPartText > span:nth-child(4) {
+    font-size: 16px;
+    margin-top: 20px;
+}
+.secondPartText > span:nth-child(5) {
+    display: inline-block;
+    font-size: 15px;
+    margin-top: 60px;
+}
+.bcolor {
+    background-color: #FFC759;
+}
+.secondPartText > button {
+    background-color: #8276FF;
+    border-radius: 31px;
+    color: white;
+    width: 210px;
+    height: 50px;
+    margin-top: 40px;
+    border: none;
+}
+.secondPartText > div{
+    margin-top: 35px;
+    display: flex;
+    justify-content: flex-start;
+    width: 70%;
+}
+.secondPartText > div > img {
+    height: 20px;
+    width: 100%;
+}
+
+.BenefitText, .SaveText, .trusted {
+    display: inline-block;
+    margin: 100px auto;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    width: 100%;
+}
+
+.Prices {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.Prices > div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0px;
+    align-items: center;
+    font-size: 20px;
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(141, 159, 244, 0.3);
+    backdrop-filter: blur(5.5px);
+    border-radius: 10px;
+}
+.Prices > div > div {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font-style: italic;
+    border: 4px solid hotpink;
+    top: -25%;
+    right: -15%;
+    width: 150px;
+    height: 150px;
+    border-radius: 180px;
+}
+.Prices > div > div > span{
+    color:white;
+    font-size: 40px;
+}
+.Prices > div > span:nth-child(3){
+    text-decoration: line-through;
+    text-decoration-color: red;
+    position: absolute;
+    top:20px;
+    left: 20px;
+}
+.Prices > div > span:nth-child(4){
+    font-size: 40px;
+    margin-top: 20px;
+}
+.Prices > div > span:nth-child(5){
+    font-size: 15px;
+}
+.Prices > div > span:nth-child(8){
+    font-size: 10px;
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+}
+ul {
+    list-style: none;
+    font-size: 12px;
+    padding: 0px;
+    text-indent: 15px;
+}
+ul li:before {
+    content: '✓';
+    color: greenyellow;
+    margin-right: 5px;
+}
+.Prices > div > button{
+    background-color: #8276FF;
+    border-radius: 31px;
+    color: white;
+    width: 210px;
+    height: 50px;
+    margin-top: 40px;
+    border: none;
+}
+
+.awards, .footer{
+    margin-top: 30px;
+    width: 100%;
+    height: 100%;
+}
+
+.root {
+    background: linear-gradient(147.19deg, #362A87 -2.99%, #2C2747 82.25%, #4323F1 157.46%);
+    border-radius: 26px;
+    width: 80%;
+    height: 800px;
+    padding: 20px;
+}
+.menu {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1.5px solid white;
+}
+.menuElement {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+    gap: 20px;
+    padding-bottom: 15px;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    opacity: .5;
+}
+
+.activeElement {
+    opacity: 1;
+}
+
+.mainText > button {
+    width: 210px;
+    height: 50px;
+    background-color: #8276FF;
+    border-radius: 31px;
+    border: none;
+    color: white;
+}
+.main > img {
+    margin-top: 100px;
+    width: 50%;
+    height: 100%;
+}
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mainText {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 300px;
+    justify-content: space-between;
+}
+.list > ul {
+    color: white;
+    font-size: 15px;
+}
+.header {
+    font-size: 30px;
+    color: white;
+    text-align: justify;
+    margin-right: 50px;
+}
+
+footer {
+    position: relative;
+}
+footer > span {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    color: white;
+    font-size: 30px;
+}
+footer > button {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    color: white;
+    background-color: #8276FF;
+    border: none;
+    border-radius: 31px;
+    width: 210px;
+    height: 50px;
+}
+.trustedImg  {
+    display: flex;
+    text-align: center;
+    margin: 5px auto;
+    width: 70%;
+    height: 100%;
+}
